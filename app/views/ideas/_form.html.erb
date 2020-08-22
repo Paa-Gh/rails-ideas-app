@@ -1,0 +1,45 @@
+<div class="container mb-3">
+  <div class="row justify-content-center">
+    <div class="inputform col-md-6 border">
+      <div class="form-group mx-4 my-5">
+      <%= form_with(model: idea, local: true) do |form| %>
+        <% if idea.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
+
+            <ul>
+              <% idea.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field mb-3">
+          <%= form.text_field :name, placeholder:"Idea Name", class:"form-control" %>
+        </div>
+
+        <div class="field mb-3">
+          <%= form.text_area :content, placeholder:"Idea Details", class:"form-control" %>
+        </div>
+
+        <div class="field mb-3">
+          <%= form.label :category_id, class:"label" %>
+          <%= form.collection_select :category_id, Category.all, :id, :name, class:"form-control" %>
+        </div>
+
+        <%= hidden_field_tag 'idea[user_id]', current_user.id %>
+
+        <div class="field mb-3">
+          <%= form.label :picture, class:"label"%>
+          <%= form.file_field :picture %>
+        </div>
+
+        <div class="actions">
+          <%= form.submit %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>

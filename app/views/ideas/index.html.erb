@@ -1,0 +1,13 @@
+<h1 class="my-3"><b>My Ideas</b></h1>
+
+<% @ideas.in_groups_of(3) do |group| %>
+  <div class="row mb-5">
+    <% group.compact.each do |idea| %>
+      <div class="col-md-4">
+        <%= image_tag idea.picture, width: '100%' %>
+        <h4 class="mt-2"><%= link_to idea.name, idea, class:"iname" %></h4>
+        <%= idea.content %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

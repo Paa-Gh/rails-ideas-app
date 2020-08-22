@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<div>
+  <div class="row m-2 border rounded">
+    <div class="col-md-3 my-2">
+      <%= image_tag(@idea.picture, width: '100%') %>
+    </div>
+
+    <div class="col-md-9 my-2">
+      <p><b>Name: </b><%= @idea.name %></p>
+      <p><b>Description: </b><%= @idea.content %></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 ml-2 my-2">
+      <p>
+        <%= link_to 'Edit', edit_idea_path(@idea), class: "btn btn-secondary mr-2" %>
+        <%= link_to 'Delete', @idea, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-danger mr-2" %>
+        <%= link_to 'Back', ideas_path, class: "btn btn-primary" %>
+      </p>
+    </div>
+  </div>
+</div>
