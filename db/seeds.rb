@@ -7,4 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Category.create(name: "Ministry")
 Category.create(name: "Business")
+Category.create(name: "Health")
+Category.create(name: "Career")
+Category.create(name: "Sports")
+Category.create(name: "Family Life")
 Category.create(name: "Other")
