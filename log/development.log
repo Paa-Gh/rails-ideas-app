@@ -10460,3 +10460,252 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6209)
 
 
+Started GET "/categories" for 127.0.0.1 at 2020-08-24 23:28:49 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1326)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 20.9ms | ActiveRecord: 1.5ms | Allocations: 7935)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2020-08-24 23:29:02 +0000
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:67:in `set_category'
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 224)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 8.9ms | ActiveRecord: 5.0ms | Allocations: 6173)
+
+
+Started GET "/categories" for 127.0.0.1 at 2020-08-24 23:29:04 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1031)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 4.0ms | Allocations: 6165)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2020-08-24 23:29:06 +0000
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:67:in `set_category'
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 0.6ms | Allocations: 5759)
+
+
+Started GET "/categories" for 127.0.0.1 at 2020-08-24 23:29:08 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.8ms | Allocations: 6164)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2020-08-24 23:29:10 +0000
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:67:in `set_category'
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 5793)
+
+
+Started GET "/categories" for 127.0.0.1 at 2020-08-24 23:29:12 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 1.2ms | Allocations: 6171)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2020-08-24 23:29:28 +0000
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:67:in `set_category'
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 5781)
+
+
+Started GET "/categories" for 127.0.0.1 at 2020-08-24 23:29:32 +0000
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.7ms | Allocations: 6166)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.6ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  Rendered ideas/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 7450)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 28.4ms | ActiveRecord: 3.8ms | Allocations: 13386)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--38975960a46a41b57c38ccf6dc97351f0c4a981d/bootstrap-social-logo.png" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--38975960a46a41b57c38ccf6dc97351f0c4a981d", "filename"=>"bootstrap-social-logo"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: 5gb6f2vy05yelypeyqcrd2fcu9j1 (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOV2RpTm1ZeWRua3dOWGxsYkhsd1pYbHhZM0prTW1aamRUbHFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpWFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1KdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjJKdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlUiLCJleHAiOiIyMDIwLTA4LTI0VDIzOjUwOjUzLjM0NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--842ba3a12202309aeac981522b217cf1aa16f0e4/bootstrap-social-logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22bootstrap-social-logo.png%22%3B+filename%2A%3DUTF-8%27%27bootstrap-social-logo.png)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOV2RpTm1ZeWRua3dOWGxsYkhsd1pYbHhZM0prTW1aamRUbHFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpWFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1KdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjJKdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlUiLCJleHAiOiIyMDIwLTA4LTI0VDIzOjUwOjUzLjM0NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--842ba3a12202309aeac981522b217cf1aa16f0e4/bootstrap-social-logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22bootstrap-social-logo.png%22%3B+filename%2A%3DUTF-8%27%27bootstrap-social-logo.png
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms | Allocations: 1963)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2aa95b9693c9e970565f491b7854cf82a2885e2/test5.jpg" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2aa95b9693c9e970565f491b7854cf82a2885e2", "filename"=>"test5"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 7mf2e1f89azvudz1yajfddu8xnge (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMjFtTW1VeFpqZzVZWHAyZFdSNk1YbGhhbVprWkhVNGVHNW5aUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGMzUTFMbXB3WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmRHVnpkRFV1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMjRUMjM6NTA6NTMuMzYwWiIsInB1ciI6ImJsb2Jfa2V5In19--21763b60b98e40ed282738f020a75093e7e504f2/test5.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22test5.jpg%22%3B+filename%2A%3DUTF-8%27%27test5.jpg)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMjFtTW1VeFpqZzVZWHAyZFdSNk1YbGhhbVprWkhVNGVHNW5aUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGMzUTFMbXB3WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmRHVnpkRFV1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMjRUMjM6NTA6NTMuMzYwWiIsInB1ciI6ImJsb2Jfa2V5In19--21763b60b98e40ed282738f020a75093e7e504f2/test5.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22test5.jpg%22%3B+filename%2A%3DUTF-8%27%27test5.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1958)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c4260d2a187d644738950c7ab8a5330dadda6ce7/hair.jpg" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c4260d2a187d644738950c7ab8a5330dadda6ce7", "filename"=>"hair"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: epr7ugowa0sctspqjflbmjh0uknf (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaWEJ5TjNWbmIzZGhNSE5qZEhOd2NXcG1iR0p0YW1nd2RXdHVaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1oaGFYSXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkb1lXbHlMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wOC0yNFQyMzo1MDo1My4zNzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--d2918e7d2aa869b76ee5c4730fc2b5337dcbee10/hair.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22hair.jpg%22%3B+filename%2A%3DUTF-8%27%27hair.jpg)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaWEJ5TjNWbmIzZGhNSE5qZEhOd2NXcG1iR0p0YW1nd2RXdHVaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1oaGFYSXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkb1lXbHlMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wOC0yNFQyMzo1MDo1My4zNzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--d2918e7d2aa869b76ee5c4730fc2b5337dcbee10/hair.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22hair.jpg%22%3B+filename%2A%3DUTF-8%27%27hair.jpg
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1958)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOV2RpTm1ZeWRua3dOWGxsYkhsd1pYbHhZM0prTW1aamRUbHFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpWFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1KdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjJKdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlUiLCJleHAiOiIyMDIwLTA4LTI0VDIzOjUwOjUzLjM0NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--842ba3a12202309aeac981522b217cf1aa16f0e4/bootstrap-social-logo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22bootstrap-social-logo.png%22%3B+filename%2A%3DUTF-8%27%27bootstrap-social-logo.png" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"bootstrap-social-logo.png\"; filename*=UTF-8''bootstrap-social-logo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOV2RpTm1ZeWRua3dOWGxsYkhsd1pYbHhZM0prTW1aamRUbHFNUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpWFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1KdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjJKdmIzUnpkSEpoY0MxemIyTnBZV3d0Ykc5bmJ5NXdibWNHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlUiLCJleHAiOiIyMDIwLTA4LTI0VDIzOjUwOjUzLjM0NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--842ba3a12202309aeac981522b217cf1aa16f0e4", "filename"=>"bootstrap-social-logo"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 493)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMjFtTW1VeFpqZzVZWHAyZFdSNk1YbGhhbVprWkhVNGVHNW5aUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGMzUTFMbXB3WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmRHVnpkRFV1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMjRUMjM6NTA6NTMuMzYwWiIsInB1ciI6ImJsb2Jfa2V5In19--21763b60b98e40ed282738f020a75093e7e504f2/test5.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22test5.jpg%22%3B+filename%2A%3DUTF-8%27%27test5.jpg" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"test5.jpg\"; filename*=UTF-8''test5.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhOMjFtTW1VeFpqZzVZWHAyZFdSNk1YbGhhbVprWkhVNGVHNW5aUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGMzUTFMbXB3WnlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjbmRHVnpkRFV1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMjRUMjM6NTA6NTMuMzYwWiIsInB1ciI6ImJsb2Jfa2V5In19--21763b60b98e40ed282738f020a75093e7e504f2", "filename"=>"test5"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 497)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaWEJ5TjNWbmIzZGhNSE5qZEhOd2NXcG1iR0p0YW1nd2RXdHVaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1oaGFYSXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkb1lXbHlMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wOC0yNFQyMzo1MDo1My4zNzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--d2918e7d2aa869b76ee5c4730fc2b5337dcbee10/hair.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22hair.jpg%22%3B+filename%2A%3DUTF-8%27%27hair.jpg" for 127.0.0.1 at 2020-08-24 23:45:53 +0000
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"hair.jpg\"; filename*=UTF-8''hair.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhaWEJ5TjNWbmIzZGhNSE5qZEhOd2NXcG1iR0p0YW1nd2RXdHVaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1oaGFYSXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0Snlkb1lXbHlMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wOC0yNFQyMzo1MDo1My4zNzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--d2918e7d2aa869b76ee5c4730fc2b5337dcbee10", "filename"=>"hair"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 489)
+
+
+Started GET "/ideas/1" for 127.0.0.1 at 2020-08-24 23:45:57 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67:in `set_idea'
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/show.html.erb:5
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/ideas/show.html.erb:5
+  Rendered ideas/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2480)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.8ms | Allocations: 8347)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2020-08-24 23:46:10 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (2.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  Rendered ideas/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 7180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 20.4ms | ActiveRecord: 5.6ms | Allocations: 12329)
+
+
+Started GET "/ideas/2" for 127.0.0.1 at 2020-08-24 23:46:33 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ideas_controller.rb:67:in `set_idea'
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/show.html.erb:5
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/ideas/show.html.erb:5
+  Rendered ideas/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2262)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.8ms | Allocations: 7966)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2020-08-24 23:55:27 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ app/views/ideas/index.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Idea"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ideas/index.html.erb:7
+  Rendered ideas/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 7229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 23.1ms | ActiveRecord: 4.3ms | Allocations: 12511)
+
+

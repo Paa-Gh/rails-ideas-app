@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 # add gravatar for user profile pictures
 gem 'gravtastic'
+# add amazon s3
+gem "aws-sdk-s3", require: false
